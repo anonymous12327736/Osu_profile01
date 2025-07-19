@@ -1,0 +1,100 @@
+/* === Global Styles === */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* === Typography and Effects === */
+h1.glow {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  margin-top: 30px;
+  color: #ff61a6;
+  text-shadow: 0 0 10px #ff61a6, 0 0 20px #ff61a6, 0 0 30px #ff61a6;
+  animation: float 3s ease-in-out infinite;
+}
+
+h2 {
+  margin-bottom: 0.2em;
+}
+
+/* === Avatar === */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #ff61a6;
+  margin: 20px auto;
+  box-shadow: 0 0 15px #ff61a6;
+}
+
+/* === Card Styles === */
+.card.embed {
+  margin: 30px auto;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ff61a6;
+  border-radius: 20px;
+  max-width: 480px;
+  box-shadow: 0 0 20px rgba(255, 97, 166, 0.4);
+}
+
+.sig-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* === Manual Stats Boxes === */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
+}
+
+.stat-box {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 20px;
+  border: 2px solid #ff61a6;
+  border-radius: 16px;
+  width: 200px;
+  box-shadow: 0 0 20px #ff61a6aa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #ff61a6ee;
+}
+
+.stat-box p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+/* === Footer === */
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+footer a {
+  color: #ff61a6;
+  text-decoration: none;
+}
+
+/* === Floating Animation === */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
